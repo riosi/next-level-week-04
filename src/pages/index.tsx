@@ -19,7 +19,7 @@ interface HomeProps {
   challengesCompleted: number;
 }
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
   console.log(props);
 
   return (
@@ -61,5 +61,5 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       currentExperience: Number(currentExperience),
       challengesCompleted: Number(challengesCompleted),
     },
-  };
+};
 };
